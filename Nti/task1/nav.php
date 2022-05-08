@@ -1,3 +1,14 @@
+<?php
+function active($Url)
+{
+    $curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);  
+    if($Url == $curPageName){
+        return "active";
+    }
+    return"";
+}
+?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <!-- Container wrapper -->
   <div class="container-fluid">
@@ -19,25 +30,25 @@
       <!-- Left links -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">calc</a>
+          <a class="nav-link <?= active("calc.php"); ?>" aria-current="page" href="calc.php">calc</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="elec.php">elec</a>
+          <a class="nav-link <?= active("elec.php"); ?>" href="elec.php">elec</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="even.php">even</a>
+          <a class="nav-link <?= active("even.php"); ?>" href="even.php">even</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="grade.php">grade</a>
+          <a class="nav-link <?= active("grade.php"); ?>" href="grade.php">grade</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="max.php">max</a>
+          <a class="nav-link <?= active("max.php"); ?>" href="max.php">max</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="neg-pos.php">neg-pos</a>
+          <a class="nav-link <?= active("neg-pos.php"); ?>" href="neg-pos.php">neg-pos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="root.php">root</a>
+          <a class="nav-link <?= active("root.php"); ?>" href="root.php">root</a>
         </li>
       </ul>
       <!-- Left links -->
