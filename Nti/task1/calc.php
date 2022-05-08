@@ -41,6 +41,9 @@ if (!empty($_POST['number1']) && !empty($_POST['number2'])) {
 </head>
 
 <body>
+    <?php
+    include_once("nav.php");
+    ?>
     <div class="card border-primary w-50 mx-auto my-5">
         <div class="card-body text-center  mx-auto">
             <h4 class="card-title text-capitalize text-danger"> calculator </h4>
