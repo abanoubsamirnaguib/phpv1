@@ -22,22 +22,22 @@
           <a class="nav-link active" aria-current="page" href="#">calc</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/elec.php">elec</a>
+          <a class="nav-link" href="elec.php">elec</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/even.php">even</a>
+          <a class="nav-link" href="even.php">even</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/grade.php">grade</a>
+          <a class="nav-link" href="grade.php">grade</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/max.php">max</a>
+          <a class="nav-link" href="max.php">max</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/neg.php">neg-pos</a>
+          <a class="nav-link" href="neg.php">neg-pos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/root.php">root</a>
+          <a class="nav-link" href="root.php">root</a>
         </li>
       </ul>
       <!-- Left links -->
