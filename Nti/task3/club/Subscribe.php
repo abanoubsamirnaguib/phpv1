@@ -23,6 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+  <?php
+  include_once("../nav.php");
+  ?>
   <div class="container-fluid">
     <h2 class="text-warning text-capitalize text-center mt-3 h2 display-3 fw-bolder ">Club...</h2>
     <div class="row mt-3 ">
@@ -31,25 +34,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div class="col-6  my-5">
         <?= $error ?? "" ?>
-        <form method="post" > 
+        <form method="post">
           <div class="my-auto">
             <label for="" class="form-label fw-bold text-warning text-capitalize">Member Name</label>
             <input type="text" class="form-control w-50" name="name" id="name" aria-describedby="name" placeholder="Member Name" value="<?= $_POST['name'] ?? ""; ?>">
-          <small class="form-text text-muted">
-            club subscription starts with <b>10,000 L.E</b>
-          </small>
+            <small class="form-text text-muted">
+              club subscription starts with <b>10,000 L.E</b>
+            </small>
           </div>
           <div class="my-auto mt-5">
             <label for="" class="form-label fw-bold text-warning text-capitalize">Count of family members</label>
             <input type="number" class="form-control w-50" name="Num" id="Num" aria-describedby="Num" placeholder="Count of family members" value="<?= $_POST['Num'] ?? ""; ?>">
-          <small class="form-text text-muted">
-            cost of each member is <b>2,500 L.E</b>
-          </small>
+            <small class="form-text text-muted">
+              cost of each member is <b>2,500 L.E</b>
+            </small>
           </div>
           <button type="submit" class="btn btn-secondary text-center my-2">Subscribe</button>
         </form>
-      
-   
+
+
       </div>
     </div>
   </div>

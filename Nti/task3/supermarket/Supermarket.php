@@ -73,6 +73,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+  <?php
+  include_once("../nav.php");
+  ?>
   <div class="container-fluid">
     <h2 class="text-info text-capitalize text-center mt-3 h2 display-3 fw-bolder ">Supermarket</h2>
     <div class="row mt-3">

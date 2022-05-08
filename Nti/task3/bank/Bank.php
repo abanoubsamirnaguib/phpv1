@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       return ["investRate" => $investRate, "TotalLoan" => $TotalLoan, "monNum" => $monNum];
     }
 
-    if ($_POST['loanYear'] < 3 ) {
+    if ($_POST['loanYear'] < 3) {
       $result = calculate(.10);
     } elseif ($_POST['loanYear'] < 30 && $_POST['loanYear'] >= 3) {
       $result = calculate(.15);
@@ -36,6 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+  <?php
+  include_once("../nav.php");
+  ?>
   <div class="container-fluid">
     <h2 class="text-info text-capitalize text-center mt-3 h2 display-3 fw-bolder ">bank</h2>
     <div class="row mt-3">

@@ -23,6 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+  <?php
+  include_once("../nav.php");
+  ?>
   <div class="container-fluid">
     <h2 class="text-danger text-capitalize text-center mt-3 h2 display-3 fw-bolder ">hospital</h2>
     <div class="row mt-3 ">
@@ -31,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div class="col-6  my-5">
         <?= $error ?? "" ?>
-        <form method="post" > 
+        <form method="post">
           <div class="my-auto">
             <label for="" class="form-label fw-bold text-warning text-capitalize">Phone Number</label>
             <input type="text" class="form-control w-50" name="Phone" id="Phone" aria-describedby="Phone" placeholder="Phone Number" value="<?= $_POST['name'] ?? ""; ?>">
