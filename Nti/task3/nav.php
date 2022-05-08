@@ -30,16 +30,16 @@ function active(string $Url):string
       <!-- Left links -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link <?= active("Bank.php"); ?>" href="bank\Bank.php">Bank</a>
+          <a class="nav-link <?= active("Bank.php"); ?>" href="/Nti/task3/bank/Bank.php">Bank</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= active("Subscribe.php"); ?>" href="club\Subscribe.php">club</a>
+          <a class="nav-link <?= active("Subscribe.php"); ?>" href="/Nti/task3/club/Subscribe.php">club</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= active("Number.php"); ?>" href="hospital\Number.php">hospital</a>
+          <a class="nav-link <?= active("Number.php"); ?>" href="/Nti/task3/hospital/Number.php">hospital</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?= active("Supermarket.php"); ?>" href="supermarket\Supermarket.php">supermarket</a>
+          <a class="nav-link <?= active("Supermarket.php"); ?>" href="/Nti/task3/supermarket/Supermarket.php">supermarket</a>
         </li>
        
       </ul>
