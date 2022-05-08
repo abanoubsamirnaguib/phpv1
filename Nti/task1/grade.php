@@ -1,5 +1,5 @@
 <?php
-print_r($_POST);
+// print_r($_POST);
 $result;
 if (
     !empty($_POST['Physics']) &&
@@ -11,12 +11,12 @@ if (
     define("Maxgrade", 250);
     $totallGrade = $_POST['Physics'] + $_POST['Chemistry'] + $_POST['Biology'] + $_POST['Mathematics'] + $_POST['Computer'];
     if (
-        ($totallGrade < constant("Maxgrade") ) &&
-        ($_POST['Physics'] <= 50 ) &&
-        ($_POST['Chemistry'] <= 50 ) &&
-        ($_POST['Biology'] <= 50 ) &&
-        ($_POST['Mathematics'] <= 50 ) &&
-        ($_POST['Computer'] <= 50 ) 
+        ($totallGrade < constant("Maxgrade")) &&
+        ($_POST['Physics'] <= 50) &&
+        ($_POST['Chemistry'] <= 50) &&
+        ($_POST['Biology'] <= 50) &&
+        ($_POST['Mathematics'] <= 50) &&
+        ($_POST['Computer'] <= 50)
     ) {
         $logic = true;
         $Percentage = ($totallGrade / constant("Maxgrade")) * 100;
@@ -64,6 +64,10 @@ if (
 </head>
 
 <body>
+    <?php
+    include_once("nav.php");
+    ?>
+
     <div class="card border-primary w-50 mx-auto my-5">
         <div class="card-body text-center  mx-auto">
             <h4 class="card-title text-capitalize text-danger"> grade </h4>
@@ -92,7 +96,7 @@ if (
                 <div class="card-header">
                     <h4 class="card-title text-center text-capitalize text-success">result</h4>
                 </div>
-                <?php if (isset($logic)  ) { ?>
+                <?php if (isset($logic)) { ?>
                     <div class="card-body">
                         <p class="card-text">totallGrade <?= $totallGrade ?></p>
                         <p class="card-text">Percentage <?= $Percentage ?> % </p>

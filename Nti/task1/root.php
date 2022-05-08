@@ -1,7 +1,7 @@
 <?php
 if (!empty($_POST['number']) && !empty($_POST['power'])) {
-        
-    $result = "the root is " . pow($_POST['number'] , (1/$_POST['power']));
+
+    $result = "the root is " . pow($_POST['number'], (1 / $_POST['power']));
 } else {
     $result = "please fill the input";
 }
@@ -20,6 +20,9 @@ if (!empty($_POST['number']) && !empty($_POST['power'])) {
 </head>
 
 <body>
+    <?php
+    include_once("nav.php");
+    ?>
     <div class="card border-primary w-50 mx-auto my-5">
         <div class="card-body text-center  mx-auto">
             <h4 class="card-title text-capitalize text-danger"> root </h4>
@@ -32,7 +35,7 @@ if (!empty($_POST['number']) && !empty($_POST['power'])) {
                             <input type="number" class="form-control text-center" name="number" id="number" placeholder="Number">
                         </div>
                     </div>
-                   
+
                     <div class="mb-3 row ">
                         <label for="inputName" class="col-sm-1-12 col-form-label"></label>
                         <div class="col-sm-1-12">
@@ -51,19 +54,19 @@ if (!empty($_POST['number']) && !empty($_POST['power'])) {
                 <div class="card-header">
                     <h4 class="card-title text-center text-capitalize text-success">result</h4>
                 </div>
-                      
-                    <div class="card-footer text-muted text-capitalize">
-                         <?=   $result  ?> 
-                    </div>
+
+                <div class="card-footer text-muted text-capitalize">
+                    <?= $result  ?>
+                </div>
             </div>
         </div>
     </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

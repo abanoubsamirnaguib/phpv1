@@ -34,7 +34,7 @@
           <a class="nav-link" href="max.php">max</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="neg.php">neg-pos</a>
+          <a class="nav-link" href="neg-pos.php">neg-pos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="root.php">root</a>
