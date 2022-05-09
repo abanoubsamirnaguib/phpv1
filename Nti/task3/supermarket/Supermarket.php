@@ -130,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                  
                  <?php if (!empty($_POST['Price-' . $i + 1]) && !empty($_POST['Quantity-' . $i + 1])) {
                     $subTot = $_POST['Price-' . $i + 1] * $_POST['Quantity-' . $i + 1];
-                    
+                    print_r($_POST);
                     $total = total($subTot);
                     echo "<span class='col mx-2 w-25 form-control'>$subTot</span>";
                   } ?>
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php }
 
              if(!empty($_POST['Quantity-1'])){
-              print_r($_POST);
+             
               print_r ("subtot".$subTot ."<br>") ;
               print_r ("total".$total) ;
             }
