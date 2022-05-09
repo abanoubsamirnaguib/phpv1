@@ -120,7 +120,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
               <br>
               <?php
+              if( $_POST['Num'] ){
               for ($i = 0; $i < $_POST['Num']; $i++) {
+
               ?>
                 <div class="row my-2">
                   <!-- <span class="col mx-2 w-25 form-control"></span> -->
@@ -136,6 +138,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   } ?>
                 </div>
             <?php }
+             
+            }
               if (!isset($subTot)) {
                 echo "<button type='submit' class='btn btn-secondary text-center offset-5 my-2'>Receipt</button> <br>";
               }
