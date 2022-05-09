@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <?php
               if( $_POST['Num'] ){
               for ($i = 0; $i < $_POST['Num']; $i++) {
-
+                      print_r($_POST['Price-'.$i + 1] . " " . $_POST['Quantity-'.$i + 1] );
               ?>
                 <div class="row my-2">
                   <!-- <span class="col mx-2 w-25 form-control"></span> -->
@@ -137,11 +137,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             <?php }
 
-             if(!empty($_POST['Quantity-1'])){
+            //  if(!empty($_POST['Quantity-1'])){
              
-              print_r ("subtot".$subTot ."<br>") ;
-              print_r ("total".$total) ;
-            }
+              // print_r ("subtot".$subTot ."<br>") ;
+              // print_r ("total".$total) ;
+            // }
 
             }
               if (!isset($subTot)) {
