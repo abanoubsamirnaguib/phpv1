@@ -139,8 +139,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
              if(!empty($_POST['Quantity-1'])){
               print_r($_POST);
-              echo "subtot".$subTot ;
-              echo "total".$total ;
+              print_r ("subtot".$subTot ."<br>") ;
+              print_r ("total".$total) ;
             }
 
             }
