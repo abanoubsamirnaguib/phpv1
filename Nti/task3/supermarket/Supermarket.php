@@ -1,5 +1,5 @@
 <?php
-if(!empty($_POST)){
+if(!empty($_POST['Quantity-1'])){
   print_r($_POST);
 }
 function total($total)
