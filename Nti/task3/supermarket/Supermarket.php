@@ -1,7 +1,5 @@
 <?php
-if(!empty($_POST['Quantity-1'])){
-  print_r($_POST);
-}
+
 function total($total)
 {
   static $subtotal = 0;
@@ -138,7 +136,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   } ?>
                 </div>
             <?php }
-             
+
+             if(!empty($_POST['Quantity-1'])){
+              print_r($_POST);
+            }
+
             }
               if (!isset($subTot)) {
                 echo "<button type='submit' class='btn btn-secondary text-center offset-5 my-2'>Receipt</button> <br>";
