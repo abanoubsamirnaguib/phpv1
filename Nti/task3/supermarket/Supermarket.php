@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <input type="number" class="col mx-2 w-25 form-control" name="Price-<?= $i + 1 ?>" id="Price" aria-describedby="Price" placeholder="Price" value="<?= $_POST['Price-' . $i + 1] ?? ""; ?>" <?= isset($_POST['Price-' . $i + 1]) ? "disabled" : ""; ?>>
                   <input type="number" class="col mx-2 w-25 form-control" name="Quantity-<?= $i + 1 ?>" id="Quantity" aria-describedby="Quantity" placeholder="Quantity" value="<?= $_POST['Quantity-' . $i + 1] ?? ""; ?>" <?= isset($_POST['Quantity-' . $i + 1]) ? "disabled" : ""; ?>>
                  
-                 <?php if ( (!empty($_POST['Price-' . $i + 1]) ) && (!empty($_POST['Quantity-' . $i + 1]) ) ) {
+                 <?php if ( (!empty($_POST['Price-'.$i + 1]) ) && (!empty($_POST['Quantity-'.$i + 1]) ) ) {
                     $subTot = $_POST['Price-' . $i + 1] * $_POST['Quantity-' . $i + 1];
                     print_r($_POST);
                     $total = total($subTot);
