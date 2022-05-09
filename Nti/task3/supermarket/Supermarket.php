@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div class="col-6">
         <?= $error ?? "" ?>
-        <form method="post" >
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
           <div class="mb-3">
             <label for="" class="form-label fw-bold text-info text-capitalize">User Name</label>
             <input type="text" class="form-control w-75" name="name" id="name" aria-describedby="name" placeholder="name" value="<?= $_POST['name'] ?? ""; ?>">
