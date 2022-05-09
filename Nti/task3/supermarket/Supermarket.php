@@ -121,13 +121,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               if( $_POST['Num'] ){
               for ($i = 0; $i < $_POST['Num']; $i++) {
                 $unit = $i + 1;
-                      // print_r($_POST['Price-'. $unit] .  " " . $_POST['Quantity-'. $unit] );
               ?>
                 <div class="row my-2">
                   <!-- <span class="col mx-2 w-25 form-control"></span> -->
-                  <input type="text" class="col mx-2 w-25 form-control" name="ProductName-<?= $i + 1 ?>" id="ProductName" aria-describedby="ProductName" placeholder="Product Name" value="<?= $_POST['ProductName-' . $unit] ?? ""; ?>" <?= isset($_POST['ProductName-' . $unit]) ? "disabled" : ""; ?>>
-                  <input type="number" class="col mx-2 w-25 form-control" name="Price-<?= $i + 1 ?>" id="Price" aria-describedby="Price" placeholder="Price" value="<?= $_POST['Price-' . $unit] ?? ""; ?>" <?= isset($_POST['Price-' . $unit]) ? "disabled" : ""; ?>>
-                  <input type="number" class="col mx-2 w-25 form-control" name="Quantity-<?= $i + 1 ?>" id="Quantity" aria-describedby="Quantity" placeholder="Quantity" value="<?= $_POST['Quantity-' . $unit] ?? ""; ?>" <?= isset($_POST['Quantity-' . $unit]) ? "disabled" : ""; ?>>
+                  <input type="text" class="col mx-2 w-25 form-control" name="ProductName-<?= $unit ?>" id="ProductName" aria-describedby="ProductName" placeholder="Product Name" value="<?= $_POST['ProductName-' . $unit] ?? ""; ?>" <?= isset($_POST['ProductName-' . $unit]) ? "disabled" : ""; ?>>
+                  <input type="number" class="col mx-2 w-25 form-control" name="Price-<?= $unit ?>" id="Price" aria-describedby="Price" placeholder="Price" value="<?= $_POST['Price-' . $unit] ?? ""; ?>" <?= isset($_POST['Price-' . $unit]) ? "disabled" : ""; ?>>
+                  <input type="number" class="col mx-2 w-25 form-control" name="Quantity-<?= $unit?>" id="Quantity" aria-describedby="Quantity" placeholder="Quantity" value="<?= $_POST['Quantity-' . $unit] ?? ""; ?>" <?= isset($_POST['Quantity-' . $unit]) ? "disabled" : ""; ?>>
                  
                  <?php if ( (!empty($_POST['Price-'.$unit]) ) && (!empty($_POST['Quantity-'.$unit]) ) ) {
                     $subTot = $_POST['Price-' . $unit] * $_POST['Quantity-' . $unit];
@@ -137,13 +136,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   } ?>
                 </div>
             <?php }
-
-            //  if(!empty($_POST['Quantity-1'])){
-             
-              // print_r ("subtot".$subTot ."<br>") ;
-              // print_r ("total".$total) ;
-            // }
-
             }
               if (!isset($subTot)) {
                 echo "<button type='submit' class='btn btn-secondary text-center offset-5 my-2'>Receipt</button> <br>";
