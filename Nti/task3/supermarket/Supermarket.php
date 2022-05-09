@@ -120,7 +120,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <?php
               if( $_POST['Num'] ){
               for ($i = 0; $i < $_POST['Num']; $i++) {
-                      print_r($_POST['Price-'.$i + 1] . " " . $_POST['Quantity-'.$i + 1] );
+                $unit = $i + 1;
+                      print_r($_POST['Price-'. $unit] .  " " . $_POST['Quantity-'. $unit] );
               ?>
                 <div class="row my-2">
                   <!-- <span class="col mx-2 w-25 form-control"></span> -->
