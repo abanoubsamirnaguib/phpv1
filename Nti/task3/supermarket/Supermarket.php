@@ -121,17 +121,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               if( $_POST['Num'] ){
               for ($i = 0; $i < $_POST['Num']; $i++) {
                 $unit = $i + 1;
-                      print_r($_POST['Price-'. $unit] .  " " . $_POST['Quantity-'. $unit] );
+                      // print_r($_POST['Price-'. $unit] .  " " . $_POST['Quantity-'. $unit] );
               ?>
                 <div class="row my-2">
                   <!-- <span class="col mx-2 w-25 form-control"></span> -->
-                  <input type="text" class="col mx-2 w-25 form-control" name="ProductName-<?= $i + 1 ?>" id="ProductName" aria-describedby="ProductName" placeholder="Product Name" value="<?= $_POST['ProductName-' . $i + 1] ?? ""; ?>" <?= isset($_POST['ProductName-' . $i + 1]) ? "disabled" : ""; ?>>
-                  <input type="number" class="col mx-2 w-25 form-control" name="Price-<?= $i + 1 ?>" id="Price" aria-describedby="Price" placeholder="Price" value="<?= $_POST['Price-' . $i + 1] ?? ""; ?>" <?= isset($_POST['Price-' . $i + 1]) ? "disabled" : ""; ?>>
-                  <input type="number" class="col mx-2 w-25 form-control" name="Quantity-<?= $i + 1 ?>" id="Quantity" aria-describedby="Quantity" placeholder="Quantity" value="<?= $_POST['Quantity-' . $i + 1] ?? ""; ?>" <?= isset($_POST['Quantity-' . $i + 1]) ? "disabled" : ""; ?>>
+                  <input type="text" class="col mx-2 w-25 form-control" name="ProductName-<?= $i + 1 ?>" id="ProductName" aria-describedby="ProductName" placeholder="Product Name" value="<?= $_POST['ProductName-' . $unit] ?? ""; ?>" <?= isset($_POST['ProductName-' . $unit]) ? "disabled" : ""; ?>>
+                  <input type="number" class="col mx-2 w-25 form-control" name="Price-<?= $i + 1 ?>" id="Price" aria-describedby="Price" placeholder="Price" value="<?= $_POST['Price-' . $unit] ?? ""; ?>" <?= isset($_POST['Price-' . $unit]) ? "disabled" : ""; ?>>
+                  <input type="number" class="col mx-2 w-25 form-control" name="Quantity-<?= $i + 1 ?>" id="Quantity" aria-describedby="Quantity" placeholder="Quantity" value="<?= $_POST['Quantity-' . $unit] ?? ""; ?>" <?= isset($_POST['Quantity-' . $unit]) ? "disabled" : ""; ?>>
                  
-                 <?php if ( (!empty($_POST['Price-'.$i + 1]) ) && (!empty($_POST['Quantity-'.$i + 1]) ) ) {
-                    $subTot = $_POST['Price-' . $i + 1] * $_POST['Quantity-' . $i + 1];
-                    print_r($_POST);
+                 <?php if ( (!empty($_POST['Price-'.$unit]) ) && (!empty($_POST['Quantity-'.$unit]) ) ) {
+                    $subTot = $_POST['Price-' . $unit] * $_POST['Quantity-' . $unit];
+                    // print_r($_POST);
                     $total = total($subTot);
                     echo "<span class='col mx-2 w-25 form-control'>$subTot</span>";
                   } ?>
