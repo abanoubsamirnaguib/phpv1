@@ -15,7 +15,9 @@ session_start();
     </thead>
     <tbody>
 <?php 
- $sql = "SELECT  orders.customerNumber,customers.customerName , count(orders.orderNumber) as orderNumber , customers.city
+ $sql = "SELECT 
+  orders.customerNumber, customers.customerName ,
+  count(orders.orderNumber) as orderNumber , customers.city
  from orders JOIN customers
     on orders.customerNumber= customers.customerNumber
  GROUP BY customers.customerName

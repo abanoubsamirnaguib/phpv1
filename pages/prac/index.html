@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC >
+<html lang="en">
+<head>
+    <title>prac</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="home">
+    <div class="container-fluid p-4 mask ">
+        <div class="row">
+            <div class="col p-4 form-control h-100 rounded m-3 in order-1">
+        <div class="form-group ">
+        <label for="Bookname" class="col-form-label-lg font-weight-bolder">         Book Name</label>
+        <input type="text" class="form-text form-control" name="Bookname" id="BookName">
+                </div> 
+       <div class="form-group ">
+        <label for="BookAutor" class="col-form-label-lg font-weight-bolder">        Book Autor</label>
+        <input type="text" class="form-text form-control" name="BookAutor" id="BookAutor"  >
+                </div>
+       <div class="form-group ">
+        <label for="BookSalary" class="col-form-label-lg font-weight-bolder">       Book Salary</label>
+        <input type="text" class="form-text form-control" name="BookSalary" id="BookSalary">
+                </div> 
+       <div class="form-group ">
+        <label for="BookDesc" class="col-form-label-lg font-weight-bolder">         Book Description</label>
+        <input type="text" class="form-text form-control" name="BookDesc" id="BookDesc">
+                </div>
+       <div class="form-group ">
+        <label for="BookPhoto" class="col-form-label-lg font-weight-bolder">         Book Photo</label>
+        <input type="file" class="form-text form-control" name="BookPhoto" id="BookPhoto" onchange="pho(event)">
+                </div>
+            </div>
+            <div class="col-sm -12 col-md-6 ">
+           <div class="row mb-5">
+               <div class="col d-flex justify-content-center align-items-start">
+                   <h3 class="font-weight-bolder text-light text-center fa-3x">
+                   <span class="text-success">Add</span><br>
+                   <span class="text-danger">Your Favourite</span><br>
+                   Book <span class="text-info">Here</span> </h3>
+               </div>
+           </div>
+                <div class="row " >
+                <div class="col d-flex justify-content-center align-items-end">
+              
+                <button onclick="store() "
+                      class="btn btn-success rounded-circle w-50 h-100">
+                      <img src="img/download1.jfif" class="rounded-circle" width="100%" alt="" >
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <div class="books">
+<div class="container" >
+           <div class="row p-5">
+        <h5 class=" font-weight-bolder text-capitalize w-25 " >Search your book</h5>
+        <input class=" form-control w-50 mr-auto " type="search" placeholder="Search By Name" id="Search" onkeyup="Search(this.value)">
+           </div> 
+           <div class="row d-flex justify-content-around" id="temp">
+        <!--book add here-->
+           </div>
+       </div>
+       
+   </div>
+   
+    <script src="js/Script.js"></script>
+    
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBZvGoM_xVHNpW1VdJ57mqC4rjqpudxq_Y",
+    authDomain: "abanoub-a00e1.firebaseapp.com",
+    databaseURL: "https://abanoub-a00e1.firebaseio.com",
+    projectId: "abanoub-a00e1",
+    storageBucket: "abanoub-a00e1.appspot.com",
+    messagingSenderId: "246796633425",
+    appId: "1:246796633425:web:f0fe380e9841f5c08eff70"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>

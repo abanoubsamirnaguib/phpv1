@@ -1,0 +1,12 @@
+.home{
+    background-image: url(../img/download2.jfif);
+    background-size: 50% 100%;
+}
+.mask{
+    background-color: rgba(0,0,0,.5)
+}
+.in{
+/*    background-color: aqua;*/
+    box-shadow:-1px 15px 40px 10px gray,
+/*        -1px 20px 40px 10px black; */
+}
