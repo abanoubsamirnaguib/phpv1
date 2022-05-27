@@ -1,0 +1,139 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+html{
+  font-size: 14px;  
+}
+a{
+text-decoration: none;
+}
+p{
+    text-align: justify ;
+}
+hr{
+    background-color: rgb(142, 142, 142);
+    height: .5px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    width: 920px;
+    background-color: rgb(238, 18, 18);
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    font-size: 18px;
+    color: rgb(0, 145, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.subTitle{
+    font-size: 13px;
+    padding:1px 10px 10px 0px;
+    color: orangered;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 100;
+}
+.header{
+    background-image: url("images/bg1.jpg");
+    height: 115px;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding-right: 25px;
+    border-bottom: 1px solid #666
+}
+.header li {
+    opacity: .8;
+    float: right;
+    margin-left: 5px;
+}
+.header li:hover {
+    opacity: 1;
+
+}
+.nav{
+    background-color: rgb(0, 0, 0);
+}
+.nav li {
+    text-transform: uppercase ;
+    /* padding:15px 0px; */
+    background-color: transparent;
+    float: left;
+}
+.nav li a{
+    color: #d1d1d1;
+    font-weight: bold;
+    padding:15px 10px;
+    display: block;
+}
+.active a ,.nav li a:hover {
+    color: #d1d1d1;
+    background-color: #0065ec;
+}
+.nav ul::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.pic{
+    margin-bottom: 15px;
+}
+.content{
+    padding: 10px;
+    background-color:rgb(205, 205, 205) ;
+}
+.col-1{
+   width:  70%;
+}
+.col-2{
+   width:  28%;
+   margin-left: 2%;
+}
+.col-1 , .col-2 {
+float: left;
+}
+.details::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.col-1 h2 , .col h2 {
+    padding-left:10px;
+}
+.col-1 ul {
+    padding-left:50px;
+    margin-bottom: 20px;
+}
+.col-1 p , .col-2 p ,.col > p {
+    padding:20px 10px 10px;
+}
+.col-1 div {text-align: center;}
+.col-1 div img , .col div img{   
+    border: 1px solid white;
+    padding: 5px;
+    margin:0% 10px;
+    width: 40%;
+}
+.col div img {
+    margin:2% 2%;
+}
+h5.subTitle{
+    color: rgb(0, 145, 255);
+    padding-top: 0px;
+    margin: 0px  0px 10px 0px;
+    
+}
+.col-2 > p , .col-2 > .subTitle{
+    padding:0px 5% ;
+}
+.col div{
+    padding:10px 0%;
+    text-align: center;
+}
+

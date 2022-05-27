@@ -1,0 +1,803 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --backgroundYellow1: #ffd52a;
+    --backgroundYellow2: #ffd01c;
+
+    --brownfont: #fac769;
+    --brownfont2: #ffbc00;
+    --whitefont: #fffbf7;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    /* max-width: 95vw; */
+    /* overflow: hidden; */
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+}
+
+.link {
+    background-color: white;
+    padding: 10px 30px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 25px;
+    display: block;
+    color: #000;
+    text-transform: capitalize;
+}
+
+main {
+    max-width: auto;
+}
+
+/* sec-1 */
+#sec-1 {
+    background: url("../Images/banner.jpg") no-repeat center center/cover;
+    padding-top: 10px;
+    user-select: none;
+    height: 100vh;
+}
+
+#sec-1>div {
+    background-color: black;
+}
+
+nav div:first-of-type {
+    padding: 10px;
+    position: relative;
+}
+
+nav div:first-of-type h2 {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fddf5c;
+    text-transform: uppercase;
+    font-style: italic;
+    float: left;
+}
+
+nav div:first-of-type h2 b {
+    font-size: 20px;
+}
+
+/* mobile buttom */
+nav div:first-of-type div {
+    margin-left: auto;
+    width: fit-content;
+}
+
+nav div:first-of-type label div div {
+    width: 20px;
+    height: 1px;
+    padding: 0px;
+    margin: 5px 0px;
+    background-color: white;
+    opacity: 1;
+}
+nav input#menu{
+    display: none;
+}
+nav #dropMenu{
+    display: block;
+    transition:all 5s ease;
+    position: absolute;
+    left: 0px;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+input#menu:checked+#dropMenu{
+    height: 0vh;
+    background-color: #fff;
+    display: none;
+}
+
+nav div:first-of-type::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* nav div:last-of-type div{
+    padding: 0px;
+} */
+nav a {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    font-size: .8rem;
+    transition: background-color .5s ease;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #e9b502;
+    color: white;
+    border-radius: 10px;
+}
+
+nav div:last-of-type div:last-of-type span {
+    text-align: center;
+}
+
+nav div:last-of-type div {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav div:last-of-type div span a {
+    display: inline-block;
+    border: thin solid white;
+    border-radius: 50%;
+    opacity: .6;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px 5px;
+    background-color: transparent;
+    transition: all .5s ease;
+}
+
+nav div:last-of-type div span a i {
+    min-width: 18px;
+    margin: 0 auto;
+}
+
+nav div:last-of-type div span a:hover {
+    opacity: 1;
+    border: thin solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav div:last-of-type div::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#sec-1 article {
+    background-size: cover;
+}
+
+#sec-1>article div aside#sec-1-Left {
+    /* background-color: rgba(255, 221, 0, 0.5); */
+    padding: 15% 10px;
+    width: 60%;
+}
+
+#sec-1>article div aside#sec-1-Left a {
+    margin-top: 30px;
+}
+
+#sec-1>article div aside#sec-1-Left p {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #000;
+    font-family: sans-serif;
+}
+
+#sec-1>article div aside#sec-1-Left h2 {
+    font-size: 2rem;
+    color: #000;
+    text-transform: capitalize;
+}
+
+#sec-1>article div aside#sec-1-Left h2:last-of-type {
+    color: #cd8383;
+}
+
+#sec-1>article div aside#sec-1-Left * {
+    margin-bottom: 15px;
+}
+
+#sec-1>article div .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* #sec-1-1 {
+} */
+
+#sec-1-1 aside#sec-1-right {
+    padding: 60px 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.207);
+    background-color: #000;
+    background-size: 1140px auto;
+}
+
+#sec-1-1 aside#sec-1-right h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #fac769;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+#sec-1-1 aside#sec-1-right p {
+    color: #fffbf7;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#sec-1-1 div aside#sec-1-right article {
+    padding: 0px;
+    margin: 0px;
+}
+
+#sec-1-1 aside:last-of-type {
+    padding: 35px;
+    background-color: #ffd52a;
+}
+
+#sec-1-1 aside:last-of-type h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* sec-2 */
+#sec-2 {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 40px 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sec-2 h2 {
+    font-size: 1.5 rem;
+    padding: 0% 0% 4% 0%;
+}
+
+#sec-2 article {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0px 0px 10px 0px;
+    margin-bottom: 20px;
+}
+
+#sec-2 article h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--brownfont, #fddf5c);
+    margin: 15px 15px 15px 15px;
+    text-transform: capitalize;
+}
+
+#sec-2 article p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 15px 15px 15px 15px;
+}
+
+#sec-2 article img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#sec-2 article aside {
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.51);
+}
+
+/* sec-3 */
+#sec-3 {
+    background-color: black;
+    color: var(--whitefont);
+    text-align: center;
+    padding-top: 40px;
+}
+
+#sec-3 h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: var(--brownfont);
+}
+
+#sec-3>aside div * {
+    margin: 10px 0px;
+}
+
+#sec-3 div aside img {
+    max-width: 98%;
+    margin-bottom: 2%;
+}
+
+#sec-3>aside {
+    background-color: var(--backgroundYellow2);
+    padding: 20px;
+    text-align: left;
+}
+
+#sec-3>aside section div h3 {
+    text-transform: capitalize;
+}
+
+#sec-3>aside section div p {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#sec-3>aside section div h3 {
+    font-size: 1.5rem;
+}
+
+/* sec-4 */
+#sec-4 {
+    text-align: left;
+    padding: 40px 20px;
+    background-color: #000;
+    color: var(--whitefont);
+}
+
+#sec-4 h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    padding: 0% 0% 2% 0%;
+    text-transform: capitalize;
+    font-family: -webkit-pictograph;
+
+}
+
+#sec-4 p {
+    font-size: .8rem;
+    color: var(--whitefont);
+    margin-bottom: 2%;
+    line-height: 1.5rem;
+    font-family: -webkit-pictograph;
+
+}
+
+#sec-4 aside div {
+    margin-bottom: 20px;
+}
+
+#sec-4 aside div h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#sec-4 aside div h3 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    line-height: .5rem;
+    text-transform: capitalize;
+    font-family: -webkit-pictograph;
+}
+
+#sec-4 aside div p {
+    font-size: 1rem;
+    color: var(--whitefont);
+    margin-top: 15px;
+}
+
+
+
+/* sec-5"*/
+#sec-5 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../Images/contactus.jpg") no-repeat center center;
+    background-size: 1450px auto;
+    text-align: left;
+    color: white;
+    padding: 0px 20px 20px;
+    border-bottom: 10px solid var(--backgroundYellow2);
+
+}
+
+#sec-5 div.container {
+    padding: 50px 0px;
+}
+
+#sec-5 aside article h2 {
+    color: var(--brownfont2);
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0px 0px 25px;
+}
+
+#sec-5 aside article p {
+    font-size: 1rem;
+    margin: 15px 0px;
+}
+
+#sec-5 aside article form {
+    border: thin solid var(--brownfont2);
+    padding: 20px;
+    box-shadow: 3px 3px 10px var(--brownfont2), -3px -3px 10px var(--brownfont2);
+    border-radius: 10px;
+}
+
+#sec-5 aside article form input {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#sec-5 aside article form a {
+    color: #000;
+    background-color: var(--brownfont2);
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#sec-5 a:hover {
+    background-color: rgb(249 183 0);
+    color: #fff;
+
+}
+
+/* #sec-6 */
+
+
+/* footer */
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 40px 20px;
+}
+
+footer>div>div {
+    line-height: 2rem;
+}
+footer article{
+    margin-bottom: 30px;
+}
+footer article a {
+    color: var(--whitefont);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    display: block;
+}
+footer article a i{
+    width: 30px;
+}
+
+footer article li {
+    color: var(--whitefont);
+    opacity: .8;
+}
+footer article:last-of-type ul li {
+    opacity: 1;
+}
+footer article:last-of-type ul li input{
+    color: var(--whitefont);
+    background-color: #000;
+    border:0px ;
+    border-bottom: thin solid var(--whitefont);
+    width: 100%;
+}
+footer article:last-of-type ul li a{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+footer article li img:not(:first-of-type){
+    margin-left: 10px;
+}
+
+footer article:not(:nth-of-type(4), :nth-of-type(5)) li:hover {
+    opacity: 1;
+}
+
+footer article h2 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+footer article ul {
+    list-style-type: none;
+}
+
+footer article li span:last-of-type {
+    background-color: rgb(249 183 0);
+}
+
+footer article li span:last-of-type, footer article li input:last-of-type {
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+footer p {
+    text-transform: capitalize;
+    color: rgba(245, 245, 245, 0.613);
+}
+
+/* media query */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        width: 520px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    /* sec-2 */
+    #sec-2 div div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #sec-2 article {
+        width: 45%;
+
+    }
+
+    /* sec-3 */
+    #sec-3 div aside img {
+        max-width: 49%;
+        margin-bottom: 1%;
+    }
+
+    #sec-3>aside section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #sec-3>aside section div h3 {
+        font-size: 2rem;
+    }
+
+    /* sec-4 */
+    #sec-4 #asidesec4 aside {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+
+    #sec-4 #asidesec4 aside div {
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    #sec-4 aside div h2 {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    /* sec-5"*/
+    #sec-5 aside article p {
+        font-size: 1rem;
+
+    }
+
+    /* footer */
+    footer>div>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 2rem;
+        align-items: flex-start;
+        /* background-color: tomato; */
+    }
+
+    footer article {
+        width: 30%;
+    }
+    footer article:last-of-type {
+        width: 40%;    
+    }
+
+    footer article:last-of-type {
+        flex-shrink: 0;
+    }
+    footer article{
+        margin-bottom: 0px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 932px;
+    }
+
+    /* sec-1 */
+    nav #dropMenu{
+        display: inline;
+        position: static;
+        width: fit-content;
+       
+    }
+    input#menu:checked~#dropMenu{
+        display: inline;
+    }
+
+    nav div:first-of-type {
+        float: left;
+        text-align: center;
+    }
+
+    nav div:last-of-type {
+        float: right;
+    }
+
+    nav a {
+        display: inline;
+    }
+
+    nav div:first-of-type div {
+        display: none;
+    }
+
+    #sec-1>article div aside#sec-1-Left h2 {
+        font-size: 3rem;
+    }
+
+    #sec-1-1 aside:last-of-type h3 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+    /* sec-2 */
+    #sec-2 {
+        padding: 40px 0px;
+    }
+
+    #sec-2 div div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #sec-2 h2 {
+        font-size: 2rem;
+        padding: 0% 0% 2% 0%;
+    }
+
+    #sec-2 article {
+        width: 30%;
+    }
+
+    /* sec-3 */
+    #sec-3 h2 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    #sec-3 div aside {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 60px;
+    }
+
+    #sec-3 div aside img {
+        width: 24%;
+        margin-bottom: 2%;
+    }
+
+    /* sec-4 */
+    #sec-4 p {
+        font-size: 1rem;
+    }
+
+    #sec-4 div#asidesec4 {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+
+    #sec-4 #asidesec4 figure, #sec-4 #asidesec4 aside {
+        width: 45%;
+        /* margin-top: 10px; */
+    }
+
+    #sec-4 #asidesec4 aside {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #sec-4 #asidesec4 aside div {
+        width: 45%;
+        margin-top: 0px;
+    }
+
+    #sec-4 aside div {
+        margin-bottom: 20px;
+    }
+
+    /* sec-5"*/
+    #sec-5 aside {
+        display: flex;
+        flex-flow: wrap row;
+        /* align-items: ; */
+        justify-content: space-between;
+    }
+
+    #sec-5 aside article:first-of-type {
+        width: 60%;
+        margin-top: 50px;
+        padding: 0px;
+    }
+
+    #sec-5 aside article:last-of-type {
+        width: 35%;
+        margin-top: 50px;
+        padding: 0px;
+    }
+
+    #sec-5 aside article h2 {
+        padding: 0px;
+    }
+
+    #sec-5 aside article p {
+        font-size: 1.2rem;
+    }
+    /* footer */
+    footer article:last-of-type {
+        width: 30%;    
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+
+}
