@@ -1,11 +1,11 @@
 <?php
-function active(string $Url):string
+function active(string $Url): string
 {
-    $curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);  
-    if($Url == $curPageName){
-        return "active";
-    }
-    return"";
+  $curPageName = substr($_SERVER["SCRIPT_NAME"], strrpos($_SERVER["SCRIPT_NAME"], "/") + 1);
+  if ($Url == $curPageName) {
+    return "active";
+  }
+  return "";
 }
 ?>
 
@@ -13,16 +13,8 @@ function active(string $Url):string
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarRightAlignExample"
-      aria-controls="navbarRightAlignExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRightAlignExample" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Collapsible wrapper -->
@@ -41,7 +33,7 @@ function active(string $Url):string
         <li class="nav-item">
           <a class="nav-link <?= active("Supermarket.php"); ?>" href="/Nti/task3/supermarket/Supermarket.php">supermarket</a>
         </li>
-       
+
       </ul>
       <!-- Left links -->
     </div>
